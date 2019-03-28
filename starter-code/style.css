@@ -16,8 +16,10 @@
   width: 100%;
   height: 100%;
 }
-.gamebBoard {
-
+.gameBoard {
+  background-image: url(flag.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .path {
   display: flex;
@@ -30,12 +32,14 @@
 
 .player1 {
   height: 200px;
+  margin: 50px 0 8px;
   background-image: url(Speed_Racer.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .player2 {
   height: 200px;
+  margin: 8px 0 50px;
   background-image: url(Racer_X.png);
   background-size: contain;
   background-repeat: no-repeat;
