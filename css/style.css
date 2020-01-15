@@ -5,7 +5,7 @@
 }
 .startModal {
   background-color: #eee;
-  background-image: url(m5_start.png);
+  background-image: url(../i/m5_start.png);
   background-repeat: no-repeat;
   background-position: center;
   position: fixed;
@@ -17,7 +17,7 @@
   height: 100%;
 }
 .gameBoard {
-  background-image: url(flag.png);
+  background-image: url(../i/flag.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -33,14 +33,14 @@
 .player1 {
   height: 200px;
   margin: 50px 0 8px;
-  background-image: url(Speed_Racer.png);
+  background-image: url(../i/Speed_Racer.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .player2 {
   height: 200px;
   margin: 8px 0 50px;
-  background-image: url(Racer_X.png);
+  background-image: url(../i/Racer_X.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
