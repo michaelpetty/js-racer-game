@@ -1,3 +1,7 @@
+import {Player} from './Player.js';
+let testPl = new Player('rand', 'm5.png');
+console.log(testPl);
+
 const player1 = document.getElementById('1');
 let positionPlayer1 = 1;
 const player2 = document.getElementById('2');
