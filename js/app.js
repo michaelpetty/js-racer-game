@@ -1,10 +1,14 @@
-import {Player} from './Player.js';
-let testPl = new Player('rand', 'm5.png');
-console.log(testPl);
+import Player from './Player.js';
+import Game from './Game.js';
 
-const player1 = document.getElementById('1');
+let testPl = new Player('rand', 'm5.png', 1);
+let testPl2 = new Player('comp', 'default', 2);
+console.log(testPl.name, testPl.avi);
+
+let curGame = new Game(testPl, testPl2);
+console.log(curGame);
+
 let positionPlayer1 = 1;
-const player2 = document.getElementById('2');
 let positionPlayer2 = 1;
 const totalSpaces = document.getElementsByClassName('space').length/2;
 
@@ -25,11 +29,11 @@ function whichKey(e) {
 
 function movePlayerOne() {
   positionPlayer1++;
-  moveOneSpace(1, positionPlayer1, player1);
+  moveOneSpace(1, positionPlayer1, testPl.ele);
 }
 function movePlayerTwo() {
   positionPlayer2++;
-  moveOneSpace(2, positionPlayer2, player2);
+  moveOneSpace(2, positionPlayer2, testPl2.ele);
 }
 function moveOneSpace(playerNum, position, player ) {
   document.getElementById(playerNum+'-space'+position).append(player);
